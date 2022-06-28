@@ -176,21 +176,23 @@ header.header {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.05) !important;
 }
 
-header.header,
-header.header.sticky {
+header.header {
   background: transparent;
 }
 
 header.header.sticky {
-  border-bottom: 4px solid red;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
 }
 
-.main-menu > ul > li span > a,
-header.sticky .main-menu > ul > li span > a {
+.main-menu > ul > li span > a {
   color: var(--white);
   font-weight: bold;
 }
-
+header.sticky .main-menu > ul > li span > a {
+  color: #202020;
+}
 .main-menu ul ul:before {
   border-bottom-color: var(--primary-color);
 }
@@ -232,7 +234,7 @@ header.header.sticky {
 
 header.header div#logo,
 header.header.sticky div#logo {
-  padding: 20px;
+  padding: 10px;
   position: relative;
 }
 
@@ -251,7 +253,7 @@ header.sticky .main-menu > ul > li span:hover > a {
 
 header.header .main-menu,
 header.header.sticky .main-menu {
-  top: 15px;
+  top: 5px;
 }
 
 header .hamburger-inner,
@@ -277,6 +279,9 @@ header.header .main-menu > ul > li span > a.sub-menu {
   display: inline-block;
   margin-left: 5px;
   margin-bottom: -2px;
+}
+header.header.sticky .main-menu > ul > li span > a.sub-menu.menu-arrow::after {
+  border-top-color: #202020;
 }
 @media (max-width: 1024px) {
   header.header div#logo,
@@ -786,6 +791,9 @@ div.fiturImg div.owl-dots button.owl-dot.active span {
   box-shadow: 0px 6px 7px 0px rgb(212 212 212);
   padding: 0 20px;
   margin-bottom: 10px;
+}
+.asosiation-wrapper img {
+  max-width: 100%;
 }
 
 /* What We Do */
@@ -1725,6 +1733,7 @@ a.box_news:hover h4 {
 }
 
 @media screen and (max-width: 576px) {
+  
   .blog-slider__content {
     padding: 0;
   }
@@ -1890,11 +1899,60 @@ div.featured-app-img .item img {
   width: auto;
   margin: 0 auto;
 }
-
+.download-apps .sub-title {
+  position: relative;
+  padding-bottom: 40px;
+  font-size: 58px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #7FB4B2;
+}
+.download-apps .sub-title span {
+  display: block;
+  color: #060A0E;
+}
+.download-apps .sub-title::before {
+  display: none;
+}
+.download-apps .sub-title::after {
+  content: "";
+  width: 94px;
+  height: 28px;
+  background-image: url('../images/triple-dot-black.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
 .download-apps .download-app li {
   display: inline-block;
+  vertical-align: middle;
 }
-
+.download-apps h5 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.social-media li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.icon-app {
+  width: 100%;
+  max-width: 382px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 72px;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 0px 7px 12px rgb(0 0 0 / 14%);
+}
 @media (max-width: 768px) {
   .download-apps .download-app li:first-child {
     margin-right: 10px;
@@ -1910,11 +1968,14 @@ div.featured-app-img .item img {
 /* <!-- Footer --> */
 
 footer {
-  background: var(--footer-bg-color);
+  background: #202020;
   color: var(--footer-color);
   padding: 80px 0px;
 }
-
+footer .container-fluid {
+  padding-left: 70px;
+  padding-right: 70px;
+}
 footer h4 {
   color: #fff;
   font-size: 20px;
@@ -1941,15 +2002,14 @@ footer ul.social-icons li:last-child {
 }
 
 footer ul.social-icons li a {
-  width: 34px;
-  height: 34px;
+  width: 40px;
   display: inline-block;
   line-height: 34px;
   text-align: center;
-  background-color: #fff;
-  color: #232323;
-  border-radius: 50%;
   transition: all 0.3s;
+}
+footer ul.social-icons li a img {
+  max-width: 100%;
 }
 
 footer ul.social-icons li a:hover {
@@ -1973,6 +2033,7 @@ footer ul.menu-list li a {
   font-size: 14px;
   color: #fff;
   transition: all 0.3s;
+  opacity: 1;
 }
 
 footer ul.menu-list li a:hover {
@@ -2065,7 +2126,7 @@ footer .contact-form button.filled-button:hover {
 /* <!-- Footage / Sub-footer --> */
 
 .sub-footer {
-  background-color: var(--footage-bg-color);
+  background-color: #040404;
   text-align: center;
   padding: 25px 0px;
 }
