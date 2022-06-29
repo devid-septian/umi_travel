@@ -1669,7 +1669,7 @@ a.box_news:hover h4 {
 
 @media screen and (max-width: 1024px) {
   #artikel .mb-5 {
-    font-size: 0px !important;
+    margin-bottom: 0px !important;
   }
   #artikel .sub-title {
     font-size: 35px;
@@ -2090,9 +2090,12 @@ div.featured-app-img .item img {
   }
 }
 .social-media li img {
-  max-width: 40%;
+  max-width: 80%;
 }
 @media (max-width: 768px) {
+  .social-media li img {
+    max-width: 100%;
+  }
   .download-apps h5 {
     font-size: 20px;
     font-weight: 700;
@@ -2100,13 +2103,99 @@ div.featured-app-img .item img {
   .icon-app {
     margin-bottom: 20px;
   }
+  .download-apps .download-app li img {
+    max-width: 100%;
+  }
   .download-apps .download-app li:first-child {
     margin-right: 10px;
   }
-
+  .download-apps .download-app li:first-child {
+    width: 41%;
+  }
   .download-apps .download-app li img {
-    height: 40px;
+    height: auto;
     margin: 0 !important;
+  }
+}
+@media (max-width: 390px) {
+  .download-apps .download-app li:first-child {
+    width: 43%;
+  }
+  #asosiation_logo h2 {
+    font-size: 15px;
+  }
+  .sub-title-clr {
+    font-size: 26px;
+  }
+  .title-section {
+    font-size: 26px;
+  }
+  .title-section span {
+    font-size: 16px;
+  }
+  .title-content h3 {
+    font-size: 24px;
+  }
+  div.fiturImg div.owl-dots button.owl-dot span {
+    width: 18px !important;
+    height: 18px !important;
+    margin: 4px;
+  }
+  .owl-carousel.package-caraousel .owl-dots .owl-dot {
+    width: 18px;
+    height: 18px;
+    margin: 4px;
+  }
+  ul.magnific-gallery.owl-carousel .owl-dots .owl-dot {
+    width: 18px;
+    height: 18px;
+    margin: 4px;
+  }
+  .download-apps .sub-title {
+    font-size: 24px;
+  }
+  .download-apps .sub-title::after {
+    width: 50px;
+    height: 16px;
+    margin-left: 0;
+  }
+  #artikel .sub-title {
+    font-size: 24px;
+  }
+  #artikel .sub-title span {
+    font-size: 16px;
+  }
+  .sub-title-left h3 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .sub-title-left span {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .owl-carousel.home-slider .owl-dots .owl-dot {
+    width: 18px;
+    height: 18px;
+    margin: 4px;
+  }
+  .owl-carousel.home-slider .owl-dots .owl-dot:after {
+    width: 18px;
+    height: 18px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+}
+@media (max-width: 360px) {
+  .download-apps .download-app li {
+    width: 41%;
+  }
+  .sub-footer #footer-selector > li > a > img {
+    height: 37px !important;
+    vertical-align: top;
   }
 }
 
@@ -2119,6 +2208,7 @@ footer {
   padding: 80px 0px;
 }
 @media (max-width: 767px) {
+  
   footer {
     padding: 30px 0;
   }
