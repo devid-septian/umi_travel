@@ -2188,6 +2188,17 @@ div.featured-app-img .item img {
   .subtitle {
     font-size: 18px;
   }
+  #whatwedo a.box_feat {
+    min-height: auto;
+    padding-bottom: 30px;
+  }
+  #whatwedo a.box_feat img {
+    max-width: 35%;
+  }
+  a.btn_1.sm, .btn_1.sm {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
 }
 @media (max-width: 360px) {
   .download-apps .download-app li {
